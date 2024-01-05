@@ -5,33 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'Poppins': ['Poppins', 'sans- serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body class="box-border ">
     <!-- Logo -->
-    <header>
-        <img src="" alt="_logo">
+    <header class="flex justify-center">
+        <img src="../አስተናጋጅ-logos/አስተናጋጅ-logos_black.png" alt="_logo" class="w-2/5">
     </header>
-    <main>
-        <h1>Get great flavours from where you are!</h1>
-        <section>
-            <h2>Already have an account?</h2>
-            <a href=""><button>Log-In</button></a>
+    <main class="flex flex-col gap-y-2.5 items-center font-Poppins">
+        <h1 class="text-xl md:text-4xl font-bold">Get great flavours from where you are!</h1>
+        <section class="text-center">
+            <h2 class="text-lg mb-4 md:text-2xl">Already have an account?</h2>
+            <a href="LogIn.html"
+                class="bg-zinc-400 rounded-lg p-2 text-white hover:bg-zinc-500 md:p-3"><button>Log-In</button></a>
         </section>
-        <section>
-            <h2>Create new account</h2>
-            <a href=""><button>Sign Up</button></a>
+        <section class="text-center">
+            <h2 class="text-lg mb-4 md:text-2xl">Create new account</h2>
+            <a href="" class="bg-zinc-400 rounded-lg p-2 text-white hover:bg-zinc-500 md:p-3"><button>Sign
+                    Up</button></a>
         </section>
         <!-- Heading -->
         <!-- section -->
         <!-- Subheaders -->
         <!-- Buttons -->
-        <footer>
-            <p><span>&copy;</span>Astenagaj-order-placer-system,
-                <time datetime="2024-1-12">January, 2023</time>
-            </p>
-
-        </footer>
+    </main>
+    <footer class="text-center mt-8">
+        <p><span>&copy;</span>Astenagaj-order-placer-system,
+            <time datetime="2024-1-12">January, 2024</time>
+        </p>
+    </footer>
 </body>
 
 </html>

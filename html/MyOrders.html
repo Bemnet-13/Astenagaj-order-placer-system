@@ -5,32 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Orders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'Poppins': ['Poppins', 'sans- serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
-    <header>
-        <img src="" alt="_logo">
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
+<body class="font-Poppins">
+    <header class="flex flex-row flex-wrap justify-between">
+        <img src="../አስተናጋጅ-logos/አስተናጋጅ-logos_black.png" alt="_logo" class="w-1/5">
+        <nav class="m-4">
+            <ul class="sm:inline-grid grid-cols-3 gap-4 font-bold">
+                <li><a href="Home.html">Home</a></li>
                 <li><a href="">Menu</a></li>
-                <li><a href="">My Orders</a></li>
+                <li><a href="MyOrders.html" aria-current="page"
+                        class="underline decoration-solid decoration-2 underline-offset-2">My
+                        Orders</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Manage Orders</h2>
+    <main class="text-center">
+        <section class="flex flex-col gap-y-2">
+            <h2 class="text-2xl font-semibold">Manage Orders</h2>
             <p>Update or cancel pending orders with ease.</p>
-            <a href=""><button>Manage Orders</button></a>
+            <a href="" class="bg-zinc-400 rounded-lg p-2 self-center text-white hover:bg-zinc-500 md:p-3"><button>Manage
+                    Orders</button></a>
         </section>
     </main>
 
 
-    <footer>
+    <footer class="text-center mt-20">
         <p><span>&copy;</span>Astenagaj-order-placer-system,
-            <time datetime="2024-1-12">January, 2023</time>
+            <time datetime="2024-1-12">January, 2024</time>
         </p>
+
     </footer>
 </body>
 
